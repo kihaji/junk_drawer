@@ -1,0 +1,35 @@
+/* Wrapper anchors the "+N more" badge to the Sources MultiSelect. */
+.ms-wrapper {
+  position: relative;
+}
+
+/* Cosmetic fallback so the field clamps to one row even before the JS runs
+   (handles the brief flash on first paint). The JS enforces this regardless
+   of class name. */
+.single-row-ms [class*="PillsInput-field"] {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* Leave room on the right edge so pills don't sit under the badge. */
+.single-row-ms [class*="MultiSelect-input"] {
+  padding-right: 72px;
+}
+
+.ms-overflow-badge {
+  position: absolute;
+  right: 10px;
+  display: none; /* toggled to flex by the JS when something overflows */
+  align-items: center;
+  transform: translateY(-50%);
+  height: 20px;
+  padding: 0 8px;
+  border-radius: var(--mantine-radius-sm);
+  background: var(--mantine-color-gray-2);
+  color: var(--mantine-color-gray-7);
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2;
+}
