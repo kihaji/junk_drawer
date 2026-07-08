@@ -42,3 +42,9 @@ chromium is installed via `uv run playwright install chromium`).
 And the store demo (real Chrome): a 570 kB store used as a server-callback
 Input re-uploads all 570 kB on every trigger; the same store read by a
 clientside callback makes no network request at all.
+
+
+Also
+
+Use fastapi-offline instead of the hand rolled stuff
+plotly.js-cartesian-dist-min is a npm lib
