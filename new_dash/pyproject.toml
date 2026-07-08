@@ -1,0 +1,21 @@
+[project]
+name = "dash-optimizations"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "a2wsgi>=1.10.10",
+    "dash>=3,<4",
+    "dash-mantine-components>=2.8.0",
+    "fastapi>=0.139.0",
+    "flask-compress>=1.24",
+    "numpy>=2.5.1",
+    "pandas>=3.0.3",
+    "plotly>=6.8.0",
+    "uvicorn>=0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.61.0",
+    "pytest>=9.1.1",
+]

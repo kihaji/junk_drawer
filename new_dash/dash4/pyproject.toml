@@ -1,0 +1,12 @@
+[project]
+name = "dash4-lab"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "dash-mantine-components>=2.8.0",
+    "dash[celery,diskcache,fastapi]>=4.2",
+    "fastapi>=0.139.0",
+    "numpy>=2.5.1",
+    "plotly>=6.8.0",
+    "uvicorn>=0.51.0",
+]
